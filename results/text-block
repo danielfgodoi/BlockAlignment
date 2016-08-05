@@ -1,0 +1,19 @@
+test/text was read successfully!
+test/block was read successfully!
+Finished alignment with 9 sequences
+S	N	M
+------------------
+2	0	0
+0	0	1
+-2	0	2
+0	1	0
+4	1	1
+0	1	2
+-3	2	0
+0	2	1
+0	2	2
+
+Best result and cooridnate
+S	N	M
+------------------
+4	1	1

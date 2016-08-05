@@ -23,16 +23,16 @@ BlockAlignment::readFile(const char *fileName,  vector<vector<char> > &fileData)
 		}
 
 		cout << fileName << " was read successfully!\n";
-		for (int i = 0; i < fileData.size(); ++i)
-		{
-			for (int j = 0; j < fileData[0].size(); ++j)
-			{
-				cout << fileData[i][j];
-			}
+		// for (int i = 0; i < fileData.size(); ++i)
+		// {
+		// 	for (int j = 0; j < fileData[0].size(); ++j)
+		// 	{
+		// 		cout << fileData[i][j];
+		// 	}
 
-			cout << endl;
-		}
-		cout << endl;
+		// 	cout << endl;
+		// }
+		// cout << endl;
 	}
 
 	else
