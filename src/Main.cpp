@@ -2,13 +2,14 @@
 
 int main(int argc, char const *argv[])
 {
-	if (argc == 2)
+	if (argc == 3)
 	{
-		BlockAlignment alignment;
-		alignment.readFile(argv[1]);
+		BlockAlignment blockAlignment(argv[1], argv[2]);
+		// blockAlignment.align();
+		// blockAlignment.print();
 	}
 
-	else if (argc < 2)
+	else if (argc < 3)
 	{
 		cout << "Missing arguments! Please try again...\n\n";
 		exit(EXIT_FAILURE);
