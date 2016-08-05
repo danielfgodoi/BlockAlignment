@@ -5,8 +5,8 @@ int main(int argc, char const *argv[])
 	if (argc == 3)
 	{
 		BlockAlignment blockAlignment(argv[1], argv[2]);
-		// blockAlignment.align();
-		// blockAlignment.print();
+		blockAlignment.align();
+		blockAlignment.print();
 	}
 
 	else if (argc < 3)
