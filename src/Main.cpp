@@ -2,23 +2,19 @@
 
 int main(int argc, char const *argv[])
 {
-	if (argc == 3)
+	if (argc > 5)
 	{
-		BlockAlignment blockAlignment(argv[1], argv[2]);
-		blockAlignment.align();
-		blockAlignment.print();
-	}
-
-	else if (argc < 3)
-	{
-		cout << "Missing arguments! Please try again...\n\n";
-		exit(EXIT_FAILURE);
+		cout << "Missing arguments! Please try again...\n";
+		cout << "To execute run bin/BlockAlignment -t <text files list> -b <block file>\n\n";
+		exit(EXIT_FAILURE);	
 	}
 
 	else
 	{
-		cout << "Too many arguments! Please try again...\n\n";
-		exit(EXIT_FAILURE);
+		BlockAlignment blockAlignment(argc, argv);
+		// blockAlignment.parse();
+		blockAlignment.align();
+		blockAlignment.print();
 	}
 
 	return 0;

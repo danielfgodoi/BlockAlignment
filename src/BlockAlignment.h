@@ -13,13 +13,13 @@ using namespace std;
 class BlockAlignment
 {
 public:
-	BlockAlignment(char const *textFileName, char const *blockFileName)
+	BlockAlignment(int argc, char const *argv[])
 	{
-		this->textFileName = textFileName;
+		textFileName = argv[1];
 		readFile(textFileName, textData);
 		setTextSize();
 
-		this->blockFileName = blockFileName;
+		blockFileName = argv[2];
 		readFile(blockFileName, blockData);
 		setBlockSize();
 

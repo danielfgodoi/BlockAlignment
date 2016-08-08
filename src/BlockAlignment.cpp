@@ -22,22 +22,12 @@ BlockAlignment::readFile(const char *fileName,  vector<vector<char> > &fileData)
 			++i;
 		}
 
-		cout << fileName << " was read successfully!\n";
-		// for (int i = 0; i < fileData.size(); ++i)
-		// {
-		// 	for (int j = 0; j < fileData[0].size(); ++j)
-		// 	{
-		// 		cout << fileData[i][j];
-		// 	}
-
-		// 	cout << endl;
-		// }
-		// cout << endl;
+		cout << "File " << fileName << " was read successfully\n";
 	}
 
 	else
 	{
-		cout << "File \"" << fileName << "\" doesn't exists! Please try again...\n\n";
+		cout << "Failed to read file \"" << fileName << "\"! The file doesn't exists! Please try again...\n\n";
 		exit(EXIT_FAILURE);
 	}
 }
@@ -81,6 +71,8 @@ BlockAlignment::align()
 	int n = 0;
 	int m = 0;
 	sIterator = 0;
+
+	cout << "\nStarting alignment\n\n";
 
 	while (textSizeN - blockSizeN + 1 > n)
 	{
@@ -226,7 +218,7 @@ BlockAlignment::print()
 			maxI = i;
 		}
 
-	cout << "Best result and cooridnate\n";
+	cout << "Best result and coordinate\n";
 	cout << "S\tN\tM\n------------------\n";
 	cout << similarity[maxI][0] << "\t" << similarity[maxI][1] << "\t" << similarity[maxI][2] << endl;
 }
