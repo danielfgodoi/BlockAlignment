@@ -54,6 +54,8 @@ public:
 
 private:
 	// Variables
+	int argc;
+	char *argv;
 	const char *textFileName;
 	const char *blockFileName;
 	vector<vector<char> > textData;
