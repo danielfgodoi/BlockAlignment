@@ -1,0 +1,25 @@
+File part was read successfully
+
+Starting alignment for news and part
+File news was read successfully
+Finished alignment with 2628 sequences
+Best result and coordinate for part and news
+S	N	M
+------------------
+300	8	0
+
+
+Starting alignment for news-2 and part
+File news-2 was read successfully
+Finished alignment with 2556 sequences
+Best result and coordinate for part and news-2
+S	N	M
+------------------
+-5	16	0
+
+
+The program was executed successfully
+
+real	0m18.575s
+user	0m18.564s
+sys	0m0.000s

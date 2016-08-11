@@ -18,20 +18,28 @@ int main(int argc, char const *argv[])
 	{
 		fileType = argv[1];
 
-		// bin/BlockAlignment -t test/text test/text test/text -b test/block
-
 		if (fileType == "-t")
 		{
 			int i = 2;
-			while (i < 5)
+			while (i < argc - 2)
 			{
-				cout << argv[i] << " - ";
 				textFileNameList.push_back(argv[i]);
 				++i;
 			}
 
-			cout << endl << endl;
-			// blockFileName = argv[i+2];
+			fileType = argv[i];
+
+			if (fileType == "-b")
+			{
+				++i;
+				blockFileName = argv[i];
+			}
+
+			else
+			{
+				cout << "Missing argument \"-b\"! Please try again...\n\n";
+				exit(EXIT_FAILURE);
+			}
 		}
 
 		else if (fileType == "-b")
@@ -39,10 +47,21 @@ int main(int argc, char const *argv[])
 			blockFileName = argv[2];
 			
 			int i = 3;
-			while (i < argc)
+			fileType = argv[i];
+			if (fileType == "-t")
 			{
-				// textFileNameList.push_back(argv[i]);
 				++i;
+				while (i < argc)
+				{
+					textFileNameList.push_back(argv[i]);
+					++i;
+				}
+			}
+
+			else
+			{
+				cout << "Missing argument \"-t\"! Please try again...\n\n";
+				exit(EXIT_FAILURE);
 			}
 		}
 				
@@ -52,19 +71,11 @@ int main(int argc, char const *argv[])
 			exit(EXIT_FAILURE);			
 		}
 
-		cout << "blockFileName: " << blockFileName << endl;
-
-		cout << "textFileNameList: ";
-		for (int i = 0; i < textFileNameList.size(); ++i)
-			cout << textFileNameList[i] << " - ";
-
-		cout << endl << endl;
-
-		BlockAlignment blockAlignment(argc, argv);
-		// blockAlignment.parse();
+		BlockAlignment blockAlignment(textFileNameList, blockFileName);
 		blockAlignment.align();
-		blockAlignment.print();
 	}
+
+	cout << "\nThe program was executed successfully\n";
 
 	return 0;
 }

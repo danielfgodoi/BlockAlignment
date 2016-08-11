@@ -13,68 +13,42 @@ using namespace std;
 class BlockAlignment
 {
 public:
-	BlockAlignment(int argc, char const *argv[])
+	// Class constructor
+	BlockAlignment(vector<string> textFileNameList, string blockFileName)
 	{
-		textFileName = argv[1];
-		readFile(textFileName, textData);
-		setTextSize();
-
-		blockFileName = argv[2];
-		readFile(blockFileName, blockData);
-		setBlockSize();
-
-		for (int i = 0; i < blockSizeN; ++i)
-			for (int j = 0; j < blockSizeM; ++j)
-				blockSequence += blockData[i][j];
-
-		// Resize alignment matrix
-		int size = blockSequence.size() + 1;
-		alignment.resize(size);
-		for (int i = 0; i < size; ++i)
-		{
-			alignment[i].resize(size);
-		}
-
-		// Resize similarity matrix
-		numberOfSequences = (textSizeN - blockSizeN + 1) * (textSizeM - blockSizeM + 1);
-		similarity.resize(numberOfSequences);
-		for (int i = 0; i < numberOfSequences; ++i)
-		{
-			similarity[i].resize(3);
-		}
-
-		// cout << "numberOfSequences: " << numberOfSequences << endl;
+		this->textFileNameList = textFileNameList;
+		this->blockFileName = blockFileName;
 	};
 
+	// Default destructor
 	~BlockAlignment(){};
 	
 	// Public methods
 	void align();
-	void print();
 
 private:
 	// Variables
-	int argc;
-	char *argv;
-	const char *textFileName;
-	const char *blockFileName;
-	vector<vector<char> > textData;
-	vector<vector<char> > blockData;
-	vector<vector<int> > similarity;
-	vector< vector<int> > alignment;
 	int blockSizeN;
 	int blockSizeM;
 	int textSizeN;
 	int textSizeM;
 	int numberOfSequences;
 	int sIterator;
+	vector<string> textFileNameList;
+	string textFileName;
+	string blockFileName;
 	string textSequence;
 	string blockSequence;
 	string textSequenceResult;
 	string blockSequenceResult;
+	vector<vector<char> > textData;
+	vector<vector<char> > blockData;
+	vector<vector<int> > similarity;
+	vector< vector<int> > alignment;
 
 	// Methods
-	void readFile(const char *fileName,  vector<vector<char> > &fileData);
+	void print();
+	void readFile(string fileName,  vector<vector<char> > &fileData);
 	void setBlockSize();
 	void setTextSize();
 	void getSequence(int n, int m);

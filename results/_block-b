@@ -1,0 +1,34 @@
+File block-b was read successfully
+
+Starting alignment for text-b and block-b
+File text-b was read successfully
+Finished alignment with 66 sequences
+Best result and coordinate for block-b and text-b
+S	N	M
+------------------
+40	2	5
+
+
+Starting alignment for news and block-b
+File news was read successfully
+Finished alignment with 3906 sequences
+Best result and coordinate for block-b and news
+S	N	M
+------------------
+-36	40	20
+
+
+Starting alignment for news-2 and block-b
+File news-2 was read successfully
+Finished alignment with 3822 sequences
+Best result and coordinate for block-b and news-2
+S	N	M
+------------------
+-36	12	58
+
+
+The program was executed successfully
+
+real	0m0.549s
+user	0m0.548s
+sys	0m0.000s
