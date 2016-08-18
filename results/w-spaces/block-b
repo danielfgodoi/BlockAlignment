@@ -1,0 +1,57 @@
+
+Best result and coordinate for test/block-b and test/text-b
+S	N	M
+------------------
+40	2	5
+
+Block
+ACACCATGAG
+TGAGTGCCCC
+CTTCTCACCC
+CAGCTCTGCC
+
+Text
+ACACCATGAG
+TGAGTGCCCC
+CTTCTCACCC
+CAGCTCTGCC
+
+Best result and coordinate for test/block-b and test/news
+S	N	M
+------------------
+-36	40	20
+
+Block
+ACACCATGAG
+TGAGTGCCCC
+CTTCTCACCC
+CAGCTCTGCC
+
+Text
+crete-legg
+re State B
+ld. The fi
+well. “T
+
+Best result and coordinate for test/block-b and test/news-2
+S	N	M
+------------------
+-36	12	58
+
+Block
+ACACCATGAG
+TGAGTGCCCC
+CTTCTCACCC
+CAGCTCTGCC
+
+Text
+ plugging 
+The legisl
+ The remov
+0 tonnes o
+
+The program was executed successfully
+
+real	0m0.746s
+user	0m0.644s
+sys	0m0.000s

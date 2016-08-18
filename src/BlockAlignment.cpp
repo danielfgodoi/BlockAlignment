@@ -23,7 +23,7 @@ BlockAlignment::readFile(string fileName,  vector<vector<char> > &fileData)
 			++i;
 		}
 
-		cout << "File " << fileName << " was read successfully\n";
+		// cout << "File " << fileName << " was read successfully\n";
 	}
 
 	else
@@ -81,7 +81,7 @@ BlockAlignment::align()
 	{
 		// Text
 		textFileName = textFileNameList[k];
-		cout << "\nStarting alignment for " << textFileName << " and " << blockFileName << endl;
+		// cout << "\nStarting alignment for " << textFileName << " and " << blockFileName << endl;
 		readFile(textFileName, textData);
 		setTextSize();
 
@@ -252,7 +252,7 @@ BlockAlignment::print()
 {
 	int i, max, maxI;
 
-	cout << "\nFinished alignment with " << numberOfSequences << " sequences" << endl;
+	// cout << "\nFinished alignment with " << numberOfSequences << " sequences" << endl;
 	// cout << "S\tN\tM\n------------------\n";
 	// for (i = 0; i < numberOfSequences; ++i)
 		// cout << similarity[i][0] << "\t" << similarity[i][1] << "\t" << similarity[i][2] << endl;
@@ -267,7 +267,7 @@ BlockAlignment::print()
 			maxI = i;
 		}
 
-	cout << "Best result and coordinate for " << blockFileName << " and " << textFileName << endl;
+	cout << "\nBest result and coordinate for " << blockFileName << " and " << textFileName << endl;
 	cout << "S\tN\tM\n------------------\n";
 	cout << similarity[maxI][0] << "\t" << similarity[maxI][1] << "\t" << similarity[maxI][2] << endl << endl;
 
