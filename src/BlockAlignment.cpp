@@ -252,7 +252,7 @@ BlockAlignment::print()
 {
 	int i, max, maxI;
 
-	cout << "Finished alignment with " << numberOfSequences << " sequences" << endl;
+	cout << "\nFinished alignment with " << numberOfSequences << " sequences" << endl;
 	// cout << "S\tN\tM\n------------------\n";
 	// for (i = 0; i < numberOfSequences; ++i)
 		// cout << similarity[i][0] << "\t" << similarity[i][1] << "\t" << similarity[i][2] << endl;
@@ -270,4 +270,24 @@ BlockAlignment::print()
 	cout << "Best result and coordinate for " << blockFileName << " and " << textFileName << endl;
 	cout << "S\tN\tM\n------------------\n";
 	cout << similarity[maxI][0] << "\t" << similarity[maxI][1] << "\t" << similarity[maxI][2] << endl << endl;
+
+	cout << "Block\n";
+	for (int i = 0; i < blockSizeN; ++i)
+	{
+		for (int j = 0; j < blockSizeM; ++j)
+		{
+			cout << blockData[i][j];
+		}
+		cout << endl;
+	}
+
+	cout << "\nText\n";
+	for (int i = similarity[maxI][1]; i < similarity[maxI][1] + blockSizeN; ++i)
+	{
+		for (int j = similarity[maxI][2]; j < similarity[maxI][2] + blockSizeM; ++j)
+		{
+			cout << textData[i][j];
+		}
+		cout << endl;
+	}
 }
