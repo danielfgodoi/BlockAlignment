@@ -1,0 +1,71 @@
+
+Best result and coordinate for test/block and test/text
+S	N	M
+------------------
+2	1	0
+
+Block
+GG
+CC
+
+Text
+AG
+CC
+
+Best result and coordinate for test/block and test/text-2
+S	N	M
+------------------
+2	0	0
+
+Block
+GG
+CC
+
+Text
+AG
+CC
+
+Best result and coordinate for test/block and test/text-b
+S	N	M
+------------------
+4	1	17
+
+Block
+GG
+CC
+
+Text
+GG
+CC
+
+Best result and coordinate for test/block and test/news
+S	N	M
+------------------
+-2	13	7
+
+Block
+GG
+CC
+
+Text
+ns
+eC
+
+Best result and coordinate for test/block and test/news-2
+S	N	M
+------------------
+-2	21	7
+
+Block
+GG
+CC
+
+Text
+nt
+eC
+
+The program was executed successfully
+
+real	0m0.028s
+user	0m0.024s
+sys	0m0.000s

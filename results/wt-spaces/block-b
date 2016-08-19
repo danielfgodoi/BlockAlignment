@@ -1,0 +1,57 @@
+
+Best result and coordinate for test/block-b and test/text-b
+S	N	M
+------------------
+40	2	5
+
+Block
+ACACCATGAG
+TGAGTGCCCC
+CTTCTCACCC
+CAGCTCTGCC
+
+Text
+ACACCATGAG
+TGAGTGCCCC
+CTTCTCACCC
+CAGCTCTGCC
+
+Best result and coordinate for test/block-b and test/news
+S	N	M
+------------------
+-36	40	12
+
+Block
+ACACCATGAG
+TGAGTGCCCC
+CTTCTCACCC
+CAGCTCTGCC
+
+Text
+concrete-l
+EmpireStat
+field.Thef
+thewell."T
+
+Best result and coordinate for test/block-b and test/news-2
+S	N	M
+------------------
+-36	19	5
+
+Block
+ACACCATGAG
+TGAGTGCCCC
+CTTCTCACCC
+CAGCTCTGCC
+
+Text
+Spariswhat
+res.Thetop
+rentDeltap
+theConvent
+
+The program was executed successfully
+
+real	0m0.474s
+user	0m0.468s
+sys	0m0.000s

@@ -1,29 +1,90 @@
 #include "BlockAlignment.h"
 
 void
-BlockAlignment::readFile(string fileName,  vector<vector<char> > &fileData)
+BlockAlignment::readFile(string fileName,  vector<vector<char> > &fileData, int &maxN, int &maxM)
 {
 	fileData.clear();
-	// ifstream file(fileName, ios::in | ios::binary | ios::ate);
 	ifstream file(fileName.c_str());
+	// ifstream file(fileName, ios::in | ios::binary | ios::ate);
 
-	if (file)
+	if (file.is_open())
 	{
-		ifstream::pos_type fileSize = file.tellg();
-		file.seekg(0, ios::beg);
+		typedef istreambuf_iterator<char> buf_iter;
+		int temp = -1;
+		int i;
+		int j;
+		char c;
 
-		std::vector<char> data;
+		maxN = maxM = 0;
 
-		int i = 1;
-		string line;
-		while(getline(file, line))
+		for(buf_iter k(file), e; k != e; ++k)
 		{
-			fileData.resize(i);
-			copy(line.begin(), line.end(), back_inserter(fileData[i-1]));
-			++i;
+			c = *k;
+
+			if (c != ' ')
+			{
+				if (c == '\n')
+				{
+					++maxM;
+
+					if (temp > maxN)
+						maxN = temp;
+					
+					temp = 0;
+				}
+
+				else ++temp;
+			}
 		}
 
-		// cout << "File " << fileName << " was read successfully\n";
+		// Corrects number of lines if finishing with \0 not \n
+		if (c != '\n')
+			++maxM;
+
+		// Resize fileData to allocate memory to read from file
+		fileData.resize(maxM);
+
+		for (i = 0; i < maxM; ++i)
+			fileData[i].resize(maxN);
+
+		// Read file
+		file.clear();
+		file.seekg(0);
+		i = j = 0;
+
+		for(buf_iter k(file), e; k != e; ++k)
+		{
+			c = *k;
+
+			if (c == '\n')
+			{
+				while (j < maxN)
+				{
+					fileData[i][j] = '*';
+					++j;
+				}
+
+				++i;
+				j = 0;
+			}
+
+			else if (c != ' ')
+			{
+				fileData[i][j] = c;
+				++j;
+			}
+		}
+
+		if (c != '\n')
+		{
+			while (j < maxN)
+			{
+				fileData[i][j] = '*';
+				++j;
+			}
+		}
+
+		file.close();
 	}
 
 	else
@@ -70,7 +131,7 @@ void
 BlockAlignment::align()
 {
 	// Block
-	readFile(blockFileName, blockData);
+	readFile(blockFileName, blockData, blockSizeN, blockSizeM);
 	setBlockSize();
 	for (int i = 0; i < blockSizeN; ++i)
 		for (int j = 0; j < blockSizeM; ++j)
@@ -82,7 +143,7 @@ BlockAlignment::align()
 		// Text
 		textFileName = textFileNameList[k];
 		// cout << "\nStarting alignment for " << textFileName << " and " << blockFileName << endl;
-		readFile(textFileName, textData);
+		readFile(textFileName, textData, textSizeN, textSizeM);
 		setTextSize();
 
 		if (blockSizeN > textSizeN || blockSizeM > textSizeM)
@@ -179,9 +240,9 @@ BlockAlignment::globalAlignment(string textSequence, string blockSequence)
 	int i = textSequence.size();
 	int j = blockSequence.size();
 
-	while(i != 0 && j != 0)
+	while (i != 0 && j != 0)
 	{
-		if(alignment[i][j] == alignment[i-1][j-1] + score(textSequence[i-1], blockSequence[j-1]))
+		if (alignment[i][j] == alignment[i-1][j-1] + score(textSequence[i-1], blockSequence[j-1]))
 		{
 			textSequenceResult += textSequence[i-1];
 			blockSequenceResult += blockSequence[j-1];
@@ -189,14 +250,14 @@ BlockAlignment::globalAlignment(string textSequence, string blockSequence)
 			j--;
 		}
 
-		else if(alignment[i][j] == alignment[i][j-1] + score('-', blockSequence[j-1]))
+		else if (alignment[i][j] == alignment[i][j-1] + score('-', blockSequence[j-1]))
 		{
 			textSequenceResult += '-';
 			blockSequenceResult += blockSequence[j-1];
 			j--;
 		}
 
-		else if(alignment[i][j] == alignment[i-1][j] + score(textSequence[i-1], '-'))
+		else if (alignment[i][j] == alignment[i-1][j] + score(textSequence[i-1], '-'))
 		{
 			textSequenceResult += textSequence[i-1];
 			blockSequenceResult += '-';
@@ -204,14 +265,14 @@ BlockAlignment::globalAlignment(string textSequence, string blockSequence)
 		}
 	}
 
-	while(i != 0)
+	while (i != 0)
 	{
 		textSequenceResult += textSequence[i-1];
 		blockSequenceResult += '-';
 		i--;
 	}
 
-	while(j != 0)
+	while (j != 0)
 	{
 		textSequenceResult += '-';
 		blockSequenceResult += blockSequence[j-1];

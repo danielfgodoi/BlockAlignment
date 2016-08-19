@@ -1,10 +1,9 @@
 #ifndef _BlockAlignment_h
 #define _BlockAlignment_h
 
+#include <cstdlib>
 #include <fstream>
-#include <streambuf>
 #include <iostream>
-#include <stdlib.h>
 #include <vector>
 #include <climits>
 
@@ -48,7 +47,7 @@ private:
 
 	// Methods
 	void print();
-	void readFile(string fileName,  vector<vector<char> > &fileData);
+	void readFile(string fileName,  vector<vector<char> > &fileData, int &maxN, int &maxM);
 	void setBlockSize();
 	void setTextSize();
 	void getSequence(int n, int m);
