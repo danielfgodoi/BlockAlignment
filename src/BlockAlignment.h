@@ -1,11 +1,13 @@
 #ifndef _BlockAlignment_h
 #define _BlockAlignment_h
 
-#include <cstdlib>
 #include <fstream>
 #include <iostream>
 #include <vector>
+
+#include <cstdlib>
 #include <climits>
+#include <ctime>
 
 using namespace std;
 
@@ -17,6 +19,7 @@ public:
 	{
 		this->textFileNameList = textFileNameList;
 		this->blockFileName = blockFileName;
+		bestResult.resize(2);
 	};
 
 	// Default destructor
@@ -33,6 +36,8 @@ private:
 	int textSizeM;
 	int numberOfSequences;
 	int sIterator;
+	int sMax;
+	int iMax;
 	vector<string> textFileNameList;
 	string textFileName;
 	string blockFileName;
@@ -40,6 +45,7 @@ private:
 	string blockSequence;
 	string textSequenceResult;
 	string blockSequenceResult;
+	vector<string> bestResult;
 	vector<vector<char> > textData;
 	vector<vector<char> > blockData;
 	vector<vector<int> > similarity;
@@ -47,7 +53,7 @@ private:
 
 	// Methods
 	void print();
-	void readFile(string fileName,  vector<vector<char> > &fileData, int &maxN, int &maxM);
+	void readFile(string fileName,  vector<vector<char> > &fileData, int &maxN, int &maxM, char type);
 	void setBlockSize();
 	void setTextSize();
 	void getSequence(int n, int m);

@@ -2,6 +2,7 @@
 
 int main(int argc, char const *argv[])
 {
+	clock_t startTime = clock();
 	string fileType;
 	string blockFileName;
 	vector<string> textFileNameList;
@@ -12,7 +13,6 @@ int main(int argc, char const *argv[])
 		cout << "To execute run bin/BlockAlignment -t <text files list> -b <block file>\n\n";
 		exit(EXIT_FAILURE);
 	}
-
 
 	else
 	{
@@ -75,7 +75,19 @@ int main(int argc, char const *argv[])
 		blockAlignment.align();
 	}
 
-	cout << "\nThe program was executed successfully\n";
+	cout << "\n> The program executed successfully\n";
+
+	// Calculate and print total time taken
+	double totalTime = (double)(clock() - startTime)/CLOCKS_PER_SEC;
+	
+	if (totalTime >= 60)
+	{
+		int minutes = totalTime / 60;
+		double seconds = totalTime - (minutes * 60);
+		printf("> Total time taken: %dm%.3fs\n", minutes, seconds);
+	}
+
+	else printf("> Total time taken: 0m%.3fs\n\n", totalTime);
 
 	return 0;
 }

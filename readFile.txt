@@ -1,7 +1,0 @@
-http://stackoverflow.com/questions/8736862/c-whats-the-most-efficient-way-to-read-a-file-into-a-stdstring
-
-http://stackoverflow.com/questions/195323/what-is-the-most-elegant-way-to-read-a-text-file-with-c
-
-http://stackoverflow.com/questions/116038/what-is-the-best-way-to-read-an-entire-file-into-a-stdstring-in-c
-
-http://stackoverflow.com/questions/4761529/efficient-way-of-reading-a-file-into-an-stdvectorchar
