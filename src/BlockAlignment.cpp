@@ -44,15 +44,16 @@ BlockAlignment::readFile(string fileName,  vector<vector<char> > &fileData, int 
 			}
 		}
 
-		for (int i = 0; i < fileData.size(); ++i)
-		{
-			for (int j = 0; j < fileData[0].size(); ++j)
-			{
-				cout << fileData[i][j];
-			}
+		// // Print fileData
+		// for (int i = 0; i < fileData.size(); ++i)
+		// {
+		// 	for (int j = 0; j < fileData[0].size(); ++j)
+		// 	{
+		// 		cout << fileData[i][j];
+		// 	}
 
-			cout << endl;
-		}
+		// 	cout << endl;
+		// }
 
 		// cout << "File " << fileName << " was read successfully\n";
 	}
@@ -168,7 +169,7 @@ BlockAlignment::align()
 		}
 
 		++k;
-		print();
+		// print();
 	}	
 }
 
@@ -178,32 +179,40 @@ BlockAlignment::globalAlignment(string textSequence, string blockSequence)
 	textSequenceResult.clear();
 	blockSequenceResult.clear();
 
+	int i, j, k;
 	int n = textSequence.size() + 1;
 	int m = blockSequence.size() + 1;
 
 	// Construct alignment matrix
-	for (int k = 0; k < m; ++k)
+	for (k = 0; k < m; ++k)
 	{
 		alignment[0][k] = k * score('-', blockSequence[k]);
 	}
 
-	for (int k = 0; k < n; ++k)
+	for (k = 0; k < n; ++k)
 	{
 		alignment[k][0] = k * score(textSequence[k], '-');
 	}
 
-	// 
-	for (int i = 1; i < n; ++i)
+	for (i = 1; i < n; ++i)
 	{
-		for (int j = 1; j < m; ++j)
+		for (j = 1; j < m; ++j)
 		{
-			if (blockSequence[j] == '?')
-			{
-				alignment[i][j] = alignment[i-1][j] + score(textSequence[i-1], '-');
-				++j;
-			}
+			// if (blockSequence[j-1] == '?')
+			// {
+			// 	// alignment[i][j] = max(
+			// 	// 	alignment[i-1][j] + score(textSequence[i-1], '-'),
+			// 	// 	alignment[i][j-1] + score('-', blockSequence[j-1]),
+			// 	// 	INT_MIN
+			// 	// );
 
-			else
+			// 	alignment[i][j] = alignment[i-1][j] + score(textSequence[i-1], '-');
+				
+			// 	// Do not increment j once it's inside a for loop
+			// 	// ++j;
+			// }
+
+			// else
 				alignment[i][j] = max(
 					alignment[i-1][j] + score(textSequence[i-1], '-'),
 					alignment[i-1][j-1] + score(textSequence[i-1], blockSequence[j-1]),
@@ -212,6 +221,18 @@ BlockAlignment::globalAlignment(string textSequence, string blockSequence)
 		}
 	}
 
+	for (i = 0; i < n; ++i)
+	{
+		for (j = 0; j < m; ++j)
+		{
+			cout << alignment[i][j] << "\t";
+		}
+
+		cout << endl;
+	}
+
+	cout << endl;
+
 	// exit(1);
 	// Problema deve estar na construção do alinhamento
 
@@ -219,23 +240,13 @@ BlockAlignment::globalAlignment(string textSequence, string blockSequence)
 	similarity[sIterator][0] = alignment[n-1][m-1];
 
 	// Construct optimal alignment (result)
-	int i = textSequence.size();
-	int j = blockSequence.size();
+	i = textSequence.size();
+	j = blockSequence.size();
 
 	while (i != 0 && j != 0)
 	{
 		if (alignment[i][j] == alignment[i-1][j-1] + score(textSequence[i-1], blockSequence[j-1]))
 		{
-			// // 
-			// if (textSequence[i-1] == '*') textSequenceResult += ' ';
-			// else textSequenceResult += textSequence[i-1];
-
-			// if (blockSequence[j-1] == '?') blockSequenceResult += ' ';
-			// else blockSequenceResult += blockSequence[j-1];
-			// i--;
-			// j--;
-			// // 
-			
 			textSequenceResult += textSequence[i-1];
 			blockSequenceResult += blockSequence[j-1];
 			i--;
@@ -278,8 +289,8 @@ BlockAlignment::globalAlignment(string textSequence, string blockSequence)
 	textSequenceResult = string(textSequenceResult.rbegin(), textSequenceResult.rend());
 	blockSequenceResult = string(blockSequenceResult.rbegin(), blockSequenceResult.rend());
 
-	// cout << textSequenceResult << endl;
-	// cout << blockSequenceResult << endl;
+	cout << textSequenceResult << endl;
+	cout << blockSequenceResult << endl;
 	// cout << similarity[sIterator][0] << endl << endl;
 
 	if (similarity[sIterator][0] > sMax)
