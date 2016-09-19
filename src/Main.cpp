@@ -75,7 +75,7 @@ int main(int argc, char const *argv[])
 		blockAlignment.align();
 	}
 
-	cout << "\n> The program executed successfully\n";
+	// cout << "\n> The program executed successfully\n";
 
 	// Calculate and print total time taken
 	double totalTime = (double)(clock() - startTime)/CLOCKS_PER_SEC;
@@ -87,7 +87,7 @@ int main(int argc, char const *argv[])
 		printf("> Total time taken: %dm%.3fs\n", minutes, seconds);
 	}
 
-	else printf("> Total time taken: 0m%.3fs\n\n", totalTime);
+	else printf("\n> Total time taken: 0m%.3fs\n\n", totalTime);
 
 	return 0;
 }

@@ -1,0 +1,160 @@
+
+bin/BlockAlignment -b test/earn6 -t test/earn1 test/earn3 test/earn5 test/earn2 test/earn4 > output2
+
+> Best result and coordinate for files test/earn1 and test/earn6
+S	N	M
+-----------------
+-274	0	98
+
+> Best alignment for files test/earn1 and test/earn6
+test/earn1 r*fi-ve*bonus*issue*out*of*its*revaluation*rese-r-
+           !!!| !|!!||!!!!!!!|!|!| !!!!!|!!!| !!!!!!|!!!!| | 
+test/earn6 vieille?montagne?report-s?loss?div-idend?nil?year?
+test/earn1 ve-*to*sha-re-holde-rs*register-ed*may*shareholder
+           !| !!|!|!| !| !!!!| !!!!!!!!!!| |!!|!!!!!|!!!!!!!!
+test/earn6 net?loss?after?exceptional?charges?mln?francs?vs?p
+test/earn1 s*will*be*asked*to*a-pprove*the*issue*and*an*incre
+           !!!|!!!!!!!!!|!!!|!| !||||!!!!!!!!!!!!!!!!!!!!!!!!
+test/earn6 rofit?mln?exceptional?provisions?for?closure?of?vi
+test/earn1 ase*in*authorised*capital*to*mln*shares*from*mln*a
+           !!|!!!!!!|!|!!|  !!!| !| !| !|||!!!|!!|  !!!!!!!!!
+test/earn6 viez?electrolys--is?p-la-nt-?mln?francs--?vs?excep
+test/earn1 t*a*general*meeting*on*may*it*said*in*a*s-tatemen-
+           |   !!|  ||  !!!||!!!|!!|!!!!!!!!!!!!!!!| !!!!!!| 
+test/earn6 t---ion--al--?gain?mln?sales?and?services?billion?
+test/earn1 t*the*new*shares*will*rank*for*dividend---s*declar
+           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!||||||||   !!!!!!||
+test/earn6 francs?vs?billion?proposed?net?dividend?on?ordinar
+test/earn1 -ed*after*october*amatil*in*which*b*a*t*industrie-
+            !!!|!!!!!!!!!!!!!|!!!!!!!!!!!!!!!!!!!!!!!!!|!!|| 
+test/earn6 y?shares?nil?vs?francs?company?s?full?name?is?viei
+test/earn1 s*plc*bti*l*holds*a*pct*stake*
+           !!!!!!!|!!!!!!!!!!!!!!!!!!!!|!
+test/earn6 lle?montagne?sa?vmnb?br?reuter
+
+> Best result and coordinate for files test/earn3 and test/earn6
+S	N	M
+-----------------
+-272	0	439
+
+> Best alignment for files test/earn3 and test/earn6
+test/earn3 *by*developing*existing*businesses*and-*seeking*ne
+           !!!!!!!!!|!!!|!|!!!!!!!!!!!!!!!!!!!!|| !!!!!!!!!||
+test/earn6 vieille?montagne?reports?loss?dividend?nil?year?ne
+test/earn3 -w*o-pport-unities*it*added*that*it*had*appointed*
+            !!| !!!!| !!!!!|!!|!!| !!!!!!!!!!!!!!!!|!!!!!!!!!
+test/earn6 t?loss?after?exceptiona-l?charges?mln?francs?vs?pr
+test/earn3 david*lyon*c-urrently*managi-ng*directo--r-*of*red
+           !!!!!!|!!!!| !!!!|!|!!!!!!!| |!!!!|!|!|  | !||!!!!
+test/earn6 ofit?mln?exceptional?provisions?for?closure?of?viv
+test/earn3 land*plc*rdl-d*l*as*it-s*n--ew*chief*executive*ana
+           !!!!!!!|!|!| !!!!!!!!| !!|  !!!|!!!!!||!!!||   !||
+test/earn6 iez?electrolysis?plant?mln?francs?vs?excepti---ona
+test/earn3 lysts*noted*that*bowater*s*profits*o-f*mln*stg*fro
+           |!!!!!!!!!!!!!!!!!!!!!||!!!!!!!|!!!| !!!!|!|!!!!!!
+test/earn6 l?gain?mln?sales?and?services?billion?francs?vs?bi
+test/earn3 m*mln*previously*had*be-en*given*a*boost*by*pensio
+           !!!!|!|| !!| |    !|!!| !!!!|!||!!!!!| !!!!!!!!|!!
+test/earn6 llion?pr-opo-s----ed?net?dividend?on?o-rdinary?sha
+test/earn3 n*benefits*of*mln*s-tg*profit*from*australia*and*t
+           !!!!|!!!!| !| !!|!| !!!|!!!!!!|  !!!!!!!!!|!!!!!!!
+test/earn6 res?nil?vs-?f-rancs?company?s?f--ull?name?is?vieil
+test/earn3 he*far*east*showed*the*greates
+           !| !!!!!|!!!!!!!!!!!!!!!||!||!
+test/earn6 le-?montagne?sa?vmnb?br?reuter
+
+> Best result and coordinate for files test/earn5 and test/earn6
+S	N	M
+-----------------
+-255	0	173
+
+> Best alignment for files test/earn5 and test/earn6
+test/earn5 vieille*montagne*sa*vmnb*br*in*it*said*in*a*statem
+           |||||||!||||||||!!!!!!!!!!!!!!!|   !|| !|!!!!!!!|!
+test/earn6 vieille?montagne?reports?loss?di---vid-end?nil?yea
+test/earn5 ent*that*the*two*factors*led*to*a*squeeze*on*refin
+           !!!!|!!!!!!!!|!!!!!| !!!!!!!!!!!|  !!|!!!!!!!|!!!!
+test/earn6 r?net?loss?after?exc-eptional?cha--rges?mln?francs
+test/earn5 ing*margins*and*an*pct*fall*in*sales*and*services*
+           !!!!!!!!|!!!!|!!!!!| |!!!!|  !!!!!!|!!|!!!!|!!!!|!
+test/earn6 ?vs?profit?mln?excep-tional--?provisions?for?closu
+test/earn5 income*despite-*an*unchanged*level*of*a-ctivity*vi
+           !!!|!!!!!!!!!| !!!!!!!!!!!!!!!!!!|!!|!| |!!| !!!!!
+test/earn6 re?of?viviez?electrolysis?plant?mln?francs?v-s?exc
+test/earn5 eille*montagne*which*is*actively*pursui--ng*a*rest
+           |!!!!!!!!!|!|!!!!!!!!!|!|!!!!|!!!!!!!!|  !!!!!|!!!
+test/earn6 eptional?gain?mln?sales?and?services?billion?franc
+test/earn5 ructuring*program*re-ported*a*mln*franc*net*loss*a
+           !!!!!!|!!!!!!!|!!!!| !!!|!|!!!!!|!!!!!!!!!!!!!!|!|
+test/earn6 s?vs?billion?proposed?net?dividend?on?ordinary?sha
+test/earn5 fter*ml--n*francs*in*provis-ions*for*the*closure-*
+           !!!!!!|  !!||||||!!!!|!!!!| !!!!!!!!!!!!!!!!!!!| !
+test/earn6 res?nil?vs?francs?company?s?full?name?is?vieille?m
+test/earn5 of*a-n-*electrolysis*plan
+           |!!| | !!!!!!!!!!!!!!!!!!
+test/earn6 ontagne?sa?vmnb?br?reuter
+
+> Best result and coordinate for files test/earn2 and test/earn6
+S	N	M
+-----------------
+-259	0	113
+
+> Best alignment for files test/earn2 and test/earn6
+test/earn2 -ofi--t*mln*vs*mln*tax*mln*vs*mln*compan---y-*name
+            !!|  !!|!|!!!!!!!!!!!!!!!!!|!!!!!!!!!!|   | !!!!|
+test/earn6 vieille?montagne?reports?loss?dividend?nil?year?ne
+test/earn2 *is*bowa-ter*industries*plc--*bwtr*l-*tra--ding*pr
+           !!!!!!!| |||!!!!!!| |!!!!!|  !!!!!!| !!||  !!!!!||
+test/earn6 t?loss?after?except-ional?charges?mln?francs?vs?pr
+test/earn2 ofit*mln*vs*mln*trading*profit*includes*packaging*
+           ||||!|||  !!!!!!| !!!!!!|||!| !|  !!!!!!!!|!!!!!!!
+test/earn6 ofit?mln--?except-ional?provi-si--ons?for?closure?
+test/earn2 and*associated*products*mln*vs*mln*merchanting*and
+           !!!!!!!!!!!!| !!||!!!!|!!| !!!!||| !!|  || !!!!!!!
+test/earn6 of?viviez?ele-ctrolysis?pl-ant?mln-?fr--an-cs?vs?e
+test/earn2 *services*mln*vs*mln*tissue-*and--*timber*products
+           !!|!!| !!!!!!!!!!|||  !|!!| !|||  !!!!!|!!!!!!!!!!
+test/earn6 xcepti-onal?gain?mln--?sales?and?services?billion?
+test/earn2 *mln--*vs-*mln*interest*debit*mln*vs*mln*min-or-i-
+           !!!|  !|| !!|!!!|!!| !!!!|!!!!!!!!| !!!|!!!| || | 
+test/earn6 francs?vs?billion?pr-oposed?net?div-idend?on?ordin
+test/earn2 ty*interests*mln*debit*vs--*mln*debit*extraordinar
+           !!!!!!!||| !!!|!!!!!!!!!|  !|!!!!!!!!!!!!!|!!!|!!!
+test/earn6 ary?shares-?nil?vs?francs?company?s?full?name?is?v
+test/earn2 y*items*mln-*credit*vs*mln*debit*reuter
+           !!| !!!!|!| !!!|!!!!|  | | !!| !!||||||
+test/earn6 iei-lle?montagne?sa?v--m-n-b?b-r?reuter
+
+> Best result and coordinate for files test/earn4 and test/earn6
+S	N	M
+-----------------
+-272	0	824
+
+> Best alignment for files test/earn4 and test/earn6
+test/earn4 t*crowns*in*norway*in*but*sejerstad*said*a*profit*
+             !!!!!!!!!!|!!!!!!!!!!!| | !!!|!!| !!|| !!!!!!!!!
+test/earn6 --vieille?montagne?report-s-?loss?d-ivid-end?nil?y
+test/earn4 was*likely*this*year*bec-ause*of*planne-d*liberali
+           !|!!!!!!| !!!!!!!| |!!!| !!!!!!!!!!|!!| !!|!!!||!!
+test/earn6 ear?net?l-oss?afte-r?exceptional?charges?mln?franc
+test/earn4 s-ation*and*better*economic*performance*helped*by*
+           | !!!!!!!!!!!!!!|!!|!!!|!!!!|!!!!!!!|!!!!!!!!!!!!!
+test/earn6 s?vs?profit?mln?exceptional?provisions?for?closure
+test/earn4 a*steadier*oil*pr--ice*of*around*dlrs*a*barrel*ear
+           !!!!!!!||!!!!!!!|  !!!!!!!|!!!!!!!!|!!!!!!!!|!!| !
+test/earn6 ?of?viviez?electrolysis?plant?mln?francs?vs?exce-p
+test/earn4 lier*this*year*chase*manhattan*bank*s*cmb*n*subsid
+           !|!!!!!!!!!!!!!!!|!|!!|| !!!!!!!!!!!!!!!!!|!!!!!!!
+test/earn6 tional?gain?mln?sales?an-d?services?billion?francs
+test/earn4 iary*decided*to-*stop*foreign*exchange*trading*aft
+           !!!!!!!!|!!!!!| !|!!!!!!!!|!!!|!!!!|  !!| ||| !!!!
+test/earn6 ?vs?billion?proposed?net?dividend?on--?or-din-ary?
+test/earn4 er*heavy*losses*an-d*focus*instead*on*fe-e*based*m
+           !!!!|!!!!|!!|!!!|| !!!|!!!!!!|!!!!!!|!!| !!!!!|!!!
+test/earn6 shares?nil?vs?francs?company?s?full?name?is?vieill
+test/earn4 e--rcha-nt*ba---nking*reuter
+           |  !!!| |!!!|   |!!!!!||||||
+test/earn6 e?montagne?sa?vmnb?br?reuter
+
+> Total time taken: 0m0.745s
+

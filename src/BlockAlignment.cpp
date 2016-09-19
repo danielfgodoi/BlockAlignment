@@ -1,4 +1,5 @@
 #include "BlockAlignment.h"
+#define breakLine 50
 
 inline void
 BlockAlignment::readFile(string fileName,  vector<vector<char> > &fileData, int &maxN, int &maxM, char type)
@@ -169,7 +170,7 @@ BlockAlignment::align()
 		}
 
 		++k;
-		// print();
+		print();
 	}	
 }
 
@@ -221,17 +222,17 @@ BlockAlignment::globalAlignment(string textSequence, string blockSequence)
 		}
 	}
 
-	for (i = 0; i < n; ++i)
-	{
-		for (j = 0; j < m; ++j)
-		{
-			cout << alignment[i][j] << "\t";
-		}
+	// for (i = 0; i < n; ++i)
+	// {
+	// 	for (j = 0; j < m; ++j)
+	// 	{
+	// 		cout << alignment[i][j] << "\t";
+	// 	}
 
-		cout << endl;
-	}
+	// 	cout << endl;
+	// }
 
-	cout << endl;
+	// cout << endl;
 
 	// exit(1);
 	// Problema deve estar na construção do alinhamento
@@ -289,8 +290,8 @@ BlockAlignment::globalAlignment(string textSequence, string blockSequence)
 	textSequenceResult = string(textSequenceResult.rbegin(), textSequenceResult.rend());
 	blockSequenceResult = string(blockSequenceResult.rbegin(), blockSequenceResult.rend());
 
-	cout << textSequenceResult << endl;
-	cout << blockSequenceResult << endl;
+	// cout << textSequenceResult << endl;
+	// cout << blockSequenceResult << endl;
 	// cout << similarity[sIterator][0] << endl << endl;
 
 	if (similarity[sIterator][0] > sMax)
@@ -323,37 +324,95 @@ inline void
 BlockAlignment::print()
 {
 	// cout << "\nFinished alignment with " << numberOfSequences << " sequences" << endl;
-	// cout << "S\tN\tM\n------------------\n";
-	// for (i = 0; i < numberOfSequences; ++i)
+	// cout << "S\tN\tM\n-----------------\n";
+	// for (int i = 0; i < numberOfSequences; ++i)
 	// cout << similarity[i][0] << "\t" << similarity[i][1] << "\t" << similarity[i][2] << endl;
-
 	// cout << endl;
 
-	cout << "\n> Best result and coordinate for files " << blockFileName << " and " << textFileName << endl;
-	cout << "S\tN\tM\n------------------\n";
+	cout << "\n> Best result and coordinate for files " << textFileName << " and " << blockFileName << endl;
+	cout << "S\tN\tM\n-----------------\n";
 	cout << similarity[iMax][0] << "\t" << similarity[iMax][1] << "\t" << similarity[iMax][2] << endl << endl;
 
-	cout << "> Text (best window)\n";
-	for (int i = similarity[iMax][1]; i < similarity[iMax][1] + blockSizeN; ++i)
-	{
-		for (int j = similarity[iMax][2]; j < similarity[iMax][2] + blockSizeM; ++j)
-		{
-			cout << textData[i][j];
-		}
-		cout << endl;
-	}
+	// cout << "> Text (best window)\n";
+	// for (int i = similarity[iMax][1]; i < similarity[iMax][1] + blockSizeN; ++i)
+	// {
+	// 	for (int j = similarity[iMax][2]; j < similarity[iMax][2] + blockSizeM; ++j)
+	// 	{
+	// 		cout << textData[i][j];
+	// 	}
+	// 	cout << endl;
+	// }
 	
-	cout << "\n> Block (best window)\n";
-	for (int i = 0; i < blockSizeN; ++i)
-	{
-		for (int j = 0; j < blockSizeM; ++j)
-		{	
-			cout << blockData[i][j];
-		}
-		cout << endl;
-	}
+	// cout << "\n> Block (best window)\n";
+	// for (int i = 0; i < blockSizeN; ++i)
+	// {
+	// 	for (int j = 0; j < blockSizeM; ++j)
+	// 	{	
+	// 		cout << blockData[i][j];
+	// 	}
+	// 	cout << endl;
+	// }
 
 	// Print best alignment
-	cout << "\n> Text (best alignment)" << endl << bestResult[0] << endl;
-	cout << "\n> Block (best alignment)" << endl << bestResult[1] << endl;
+	// cout << "\n> Text (best alignment)" << endl << bestResult[0] << endl;
+	// cout << "\n> Block (best alignment)" << endl << bestResult[1] << endl;
+
+
+	cout << "> Best alignment for files " << textFileName << " and " << blockFileName << endl;
+	int sequenceSize = bestResult[0].size();
+	
+	#ifndef breakLine
+	#define breakLine
+	int breakLine = 150;
+	#endif
+	
+	for (int i = 0; i < sequenceSize; ++i)
+	{
+		// Text sequence best result
+		// cout << bestResult[0][i];
+		// Block sequence best result
+		// cout << bestResult[1][i];
+	}
+
+	for (int i = 0; i < sequenceSize; i += breakLine)
+	{
+		int longerFileName = (int)textFileName.length();
+
+		if ((int)blockFileName.length() > longerFileName)
+		{
+			longerFileName = (int)blockFileName.length();
+			cout << textFileName << " ";
+			for (int i = 0; i < (int)blockFileName.length() - (int)textFileName.length(); ++i)
+			{
+				cout << " ";
+			}
+
+			cout << bestResult[0].substr(i, breakLine) << endl;
+		}
+
+		else
+			cout << textFileName << " " << bestResult[0].substr(i, breakLine) << endl;
+
+
+		for (int j = 0; j < longerFileName + 1; ++j)
+		{
+			cout << " ";
+		}
+
+		for (int j = 0; j < (int)(bestResult[0].substr(i, breakLine)).length(); ++j)
+		{
+			if(bestResult[0][j+i] == bestResult[1][j+i])
+				cout << "|";
+
+			else if(bestResult[0][j+i] == '-' || bestResult[1][j+i] == '-')
+				cout << " ";
+
+			else
+				cout << "!";
+		}
+
+		cout << endl;
+
+		cout << blockFileName << " " << bestResult[1].substr(i, breakLine) << endl;
+	}
 }

@@ -1,5 +1,5 @@
 all:
-	mkdir -p bin/ && g++ src/Main.cpp src/BlockAlignment.cpp -o bin/BlockAlignment -std=c++11
+	mkdir -p bin/ && g++ src/Main.cpp src/BlockAlignment.cpp -o bin/BlockAlignment -Ofast -std=c++11
 	@echo ""
 
 O2:
@@ -12,4 +12,8 @@ O3:
 
 Ofast:
 	mkdir -p bin/ && g++ src/Main.cpp src/BlockAlignment.cpp -o bin/BlockAlignment -Ofast -std=c++11
+	@echo ""
+
+default:
+	mkdir -p bin/ && g++ src/Main.cpp src/BlockAlignment.cpp -o bin/BlockAlignment -std=c++11
 	@echo ""

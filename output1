@@ -1,0 +1,470 @@
+
+bin/BlockAlignment -b test/block -t test/earn2 test/earn4 test/earn6 test/grain1 test/jobs2 test/trade1 test/trade3 test/earn1 test/earn3 test/earn5 test/gold1 test/jobs1 test/jobs3 test/ship1 test/trade2 > output1
+
+> Best result and coordinate for files test/earn2 and test/block
+S	N	M
+-----------------
+-270	0	21
+
+> Best alignment for files test/earn2 and test/block
+test/earn2 s*rise*mln*stg*shr*p*vs*p*div*p*vs*p*making*p*vs*p
+           !!!!| !!!!!!|!!!!|!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+test/block moves-?to?put?everything?in?place?now?it?s?largely
+test/earn2 *turnover*billion*stg*vs*billion*pretax*profit*mln
+           !!|!!|!!!!!|!!!!|!| !!!!!!!|!| |!!| |!!!!!|!!!!!!!
+test/block ?out?of?their?hands-?said?klei-nwor-t?benson?ltd?f
+test/earn2 *vs*mln*tax*mln*vs*mln*company*n-ame*is*bowater*in
+           !!!!!!!!!|!!!!!!!|!|!| !!|!!!!!| || !!!!!!!!|!!!!!
+test/block inancial?analyst?simon-?smithson?am-ong?sumitomo?s
+test/earn2 dustrie-s*plc*bwtr*l*trading*profit-*mln*vs*mln*tr
+           !!!!!!| |!!!!!!!!!!!!!!|  !!!!!!!|| !|!!!!!!!!|!!|
+test/block ?problems?are?limits?pla--ced?on?its?move?to?enter
+test/earn2 ading*profit*inclu--de-s*packaging*and*a-ssociate-
+           !!!!!!!!!!||!!!!!|  !| |!!!!!|!|||!|!!!| !!!!!|!| 
+test/block ?u?s?securities?business?by?taking?a?share?in?amer
+test/earn2 d*products*mln*vs*mln*merchan--ting*and*services*m
+           !!!!!!!!!|!|!| !!!!!!!!!!!!||  !!!!!|||!!!!!!!!!!|
+test/block ican?investmen-t?bank?goldman?sachs?and?co?sumitom
+test/earn2 ln*vs*mln*tissue*and*timber*products*mln*vs*mln*in
+           !!!!|!!!!!!!!!!!!!!|!|!!!!!!!!!!!!!|!!!!!!!!!!!!| 
+test/block o?last?august?agreed?to?pay?mln?dlrs?for?a?pct?li-
+test/earn2 terest*debit*mln*v
+           !!!|!!!!!!!!!!!!!!
+test/block mited?partnership?
+
+> Best result and coordinate for files test/earn4 and test/block
+S	N	M
+-----------------
+-258	0	523
+
+> Best alignment for files test/earn4 and test/block
+test/earn4 e*in*oil*prices*forei-gn*banks*have*been*allowed*t
+           !!!!!!!!!|!!!|!!!!!!| |!!!!!!!!!!!!!!!!!!!|!!!|!!!
+test/block moves?to?put?everything?in?place?now?it?s?largely?
+test/earn4 o*operat-e*susbid-iaries*in*n-or-way*since*foreign
+           |!!!!!!| |!!!!!!| !!!|!!!!!!| || !!!!|!| !!!!!!| |
+test/block out?of?their?hands?said?kleinwort?benson-?ltd?fi-n
+test/earn4 *banking*analysts*in*oslo*said*access*to*norway*s*
+             ||!|!!!|||||||!!| !|  !!|!|!!!!!!!!!!!!!!!!!!!!!
+test/block --ancial?analyst?si-mo--n?smithson?among?sumitomo?
+test/earn4 second*hand*securities*and*e-quities*markets*to*be
+           |!!!!!!!!!!!!| !!|!|!|!!!!!| !!!!|!|!| !!|!!!!!!!|
+test/block s?problems?are-?limits?placed?on?its?m-ove?to?ente
+test/earn4 *approved*lat-e-r*this*spring*and*lower*primary*re
+           !!!!!!!|!!!!| | !!!!|!!|!!!!!!|!!!!!!!!!!|!!!!!!!|
+test/block r?u?s?securities?business?by?taking?a?share?in?ame
+test/earn4 serve*requirement---s*would*make*profit*this*year*
+            !!!!!!!!!!!!||||   !!!!!|| ||!!!!!!!!!!!!!!!!!!!!
+test/block -rican?investment?bank?gold-man?sachs?and?co?sumit
+test/earn4 citibank*lost*crowns*in*norway*in*but*sejer-stad*s
+           !!!!!| !!!!!!!!!!!!!!!!!!|!!||!!!!!!!!|!!!| !!!!!!
+test/block omo?la-st?august?agreed?to?pay?mln?dlrs?for?a?pct?
+test/earn4 aid*a*profit*was*lik
+           !|!!!!!!!!!|!!!|!!!!
+test/block limited?partnership?
+
+> Best result and coordinate for files test/earn6 and test/block
+S	N	M
+-----------------
+-272	0	2
+
+> Best alignment for files test/earn6 and test/block
+test/earn6 eille*montagne*reports*loss*divide-nd*ni-l*year*ne
+           !!!!!!!|!!!!!| !| !!|!!!!!!!!!!!!| |!!!| !!!!|| !|
+test/block moves?to?put?e-ve-rything?in?place?now?it?s?lar-ge
+test/earn6 t*loss*af-t-e-r--*exceptional-*char--ge-s-*ml-n*f-
+           !!!|!!!!| | | |  !!!!!!!|!!!| !!!!|  !| | !!| !!| 
+test/block ly?out?of?their?hands?said?kleinwort?benson?ltd?fi
+test/earn6 rancs*vs*profit*mln*except-ion-al*provisi-o-ns*for
+           !|||!!!!!!!!!!|!!!!!!!!!!| !|| |!!!!!!!!| | !!!!!|
+test/block nancial?analyst?simon?smithson?among?sumitomo?s?pr
+test/earn6 *closure*of*viviez*elec-trolysis-*plant*mln*francs
+           !!| !!!!!!!!!|!|!!!!|!| !!|!!!!| !!!!!|!!!|!!|!!!|
+test/block obl-ems?are?limits?placed?on?its?move?to?enter?u?s
+test/earn6 *vs*exceptional*gain*mln*sales*and*services*billio
+            !| |!!!!|| !!!!!!||   !!|!!!!!|!!!!!!!!!!!!!|!!!!
+test/block -?s-ecuriti-es?busin---ess?by?taking?a?share?in?am
+test/earn6 n*francs*vs*billion*proposed*net*dividend*on*ordin
+           !!!!||!!!|!!!!!!!!!!!!!!| !|!!!!!!!!!!!||!!!!!!!| 
+test/block erican?investment?bank?go-ldman?sachs?and?co?sumi-
+test/earn6 ary*shares*nil*vs*francs*company*s*full*name*is*vi
+           !!!!!!|!!!!!!!!!!!!| !!!!!|!|| |!!!!!!| !!!!!!!!!!
+test/block tomo?last?august?agr-eed?to?pa-y?mln?dl-rs?for?a?p
+test/earn6 eille*montagne*sa*vmnb*br*re
+           !!!| !| !|   |!!!!!!|!!!!!!!
+test/block ct?l-im-it---ed?partnership?
+
+> Best result and coordinate for files test/grain1 and test/block
+S	N	M
+-----------------
+-265	0	78
+
+> Best alignment for files test/grain1 and test/block
+test/grain1 ities-*showed*ver--min*con-sume*between*seven*and*
+            !!!|| !!!!!!!!|||  !||!!!| !!!!!!!!|!!!!|!!!!!!!!!
+test/block moves?to?put?everything?in?place?now?it?s?largely?
+test/grain1 pct*of*ch-ina*s*grain*stocks*the*china*daily*said*
+            !!|!||!!| |!!!!!!!!!!!!!!!!!!!!!!!!!| !!!!|!!!!|!!
+test/block out?of?their?hands?said?kleinwort?ben-son?ltd?fina
+test/grain1 it*also*said*that*each*year*mln*tonnes*or*pct*of*c
+            !!!|| !!!|!!!| !!!!!!!!!!!!!!!!!!||!!|!!!!!!!!!!!!
+test/block ncial-?analyst-?simon?smithson?among?sumitomo?s?pr
+test/grain1 hina*s*fruit*output*are*left*to*rot*and*mln*tonnes
+            !!!!!|!!|!!!!!!|!!!!|!|!!!!!!|!!!| !!!!!!!|!!!!!!|
+test/block oblems?are?limits?placed?on?its?mo-ve?to?enter?u?s
+test/grain1 *or*up*to*pct*of*its*vegetables*the*paper*blamed*t
+            !!!!|!!| !!!!!!!!!!|!!!!!|| !!!!!!!!!|!|!!!!||| !!
+test/block ?securit-ies?business?by?ta-king?a?share?in?ame-ri
+test/grain1 he*waste*on*inadequate*storage*and*ba-d*preservati
+            !!!!!!!| !!!!| !!!!!!!!!!!!|!!!|!!!!| |!!!!|!!!!!!
+test/block can?inve-stmen-t?bank?goldman?sachs?and?co?sumitom
+test/grain1 on*met--hods*it*said*the*government*had*launched*a
+            |!!!!|  !!!|!!!!!!!|!|!!!!!!!!|!!!!!!!!!!|!!|!!!!!
+test/block o?last?august?agreed?to?pay?mln?dlrs?for?a?pct?lim
+test/grain1 *national*pr-ogra
+            !!!!!!!!!!!| !!!!
+test/block ited?partnership?
+
+> Best result and coordinate for files test/jobs2 and test/block
+S	N	M
+-----------------
+-254	0	246
+
+> Best alignment for files test/jobs2 and test/block
+test/jobs2 rose*by*in*the*month*to*comp-ared*with*a*year*earl
+           !|!|!!!!!!!|!|!!!!||!!!!!!!| |!|!!!!!!!!!!!||!|  |
+test/block moves?to?put?everything?in?place?now?it?s?large--l
+test/jobs2 ier*the*figure*for*women*was*at*end*march*against*
+           !!!!| !!| !!!|  !|!!!!!!!!|!!!!!| !!!!|!!!!!!!|!!!
+test/block y?out-?of-?the--ir?hands?said?kle-inwort?benson?lt
+test/jobs2 a*month*earlier*and*at*end*march*on*an*unadjusted*
+           !!!!|!!!!|!!!!!!!!!!!!!!|!!| !!|!||!| !!|!!!|!!!!!
+test/block d?financial?analyst?simon?sm-ithson?a-mong?sumitom
+test/jobs2 basis*total*unemployment*fell*by*in*the*month*to*e
+           !!| !!!| !|!!!!!!!!!!!!|!!!|!!!!!!|!!!!!|| !!!||!|
+test/block o?s-?pro-blems?are?limits?placed?on?its?mo-ve?to?e
+test/jobs2 nd*march*to*in*march*the*figure*was*a*ministr-y*sp
+           |!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!|!!!!!!!!!!| !!!!
+test/block nter?u?s?securities?business?by?taking?a?share?in?
+test/jobs2 oke-sman*said*the-*unadjusted-*figures---*showed*a
+           !!| !!||!!!!!!|!| !!!|!!!!!!| !!!!!!!|   !!!|!!!!!
+test/block american?investment?bank?goldman?sachs?and?co?sumi
+test/jobs2 *smaller*than*us-ual*se-aso-nal*decrease*for*the*t
+           !!|!!| !!|!|!!|| !|!!!| !!| !|!!!!!!!!!!!|||!!!!!|
+test/block tomo?l-ast?august?agreed?to?pay?mln?dlrs?for?a?pct
+test/jobs2 --ime*of*year*be-cause
+             || !!!!!!||!!| !!!!!
+test/block ?lim-ited?partnership?
+
+> Best result and coordinate for files test/trade1 and test/block
+S	N	M
+-----------------
+-252	0	2384
+
+> Best alignment for files test/trade1 and test/block
+test/trade1 conductors*in*third*countries*to*expand*their*sale
+            !|!!!!|| !!!!!!!!| !!!!|!!|!!!!!!|!!!!!!| !!!!!!!|
+test/block moves?to-?put?ever-ything?in?place?now?it-?s?large
+test/trade1 s*to*the*u*s*in*hong*kong*where*newspapers*have*al
+            !!!|!|!!!!!!!|!!|!| !!!!!!!!!!|!|!!!!!!|!|!!!!!!!!
+test/block ly?out?of?their?han-ds?said?kleinwort?benson?ltd?f
+test/trade1 leged*japan*has*been*selling*below*cost*semiconduc
+            !!!!!!!!!||!!!|!!!!!!!!!!|  !!!!!!!!|!!!|!||!|!!!!
+test/block inancial?analyst?simon?smi--thson?among?sumitomo?s
+test/trade1 tors*some*electronics-*ma---nufacturers*share*that
+            !!|!!!!|!!!!| !!!!|!| !!|   !!!!!|!!!!!!!!!!|!|!!!
+test/block ?problems?are-?limits?placed?on?its?move?to?enter?
+test/trade1 *view*but*other*businessmen*said*such*a*short*term
+            !!!!!!!| !!|!|!!||||||||!!!!!|   !!!!!|!||!|!!!!!!
+test/block u?s?secu-rities?business?by?ta---king?a?share?in?a
+test/trade1 *commercial*advant--age*would*be*outweighed*by*fu-
+            !!!!!!!!|!!!!!!!||  |!!!!| || !!!!!!!!!!!!|!!!!!| 
+test/block merican?investment?bank?go-ld-man?sachs?and?co?sum
+test/trade1 rther*u*s--*pres--sur-e-*to*block*impor-ts*that*is
+            !|!!!!!!|  !!!!|  !!| | !||!!!!!!!!!!!| !!!!!|!!!!
+test/block itomo?last?august?agreed?to?pay?mln?dlrs?for?a?pct
+test/trade1 *a*very*short*term*vie
+            !!!!!!!!!!!|| !||!!!!!
+test/block ?limited?part-nership?
+
+> Best result and coordinate for files test/trade3 and test/block
+S	N	M
+-----------------
+-277	0	92
+
+> Best alignment for files test/trade3 and test/block
+test/trade3 ruary*comp-ared*with--*an*upward*revised*mln*dlrs*
+            !!!!!!!|!| !!|!!!!||  !!!!!|!|!!!!!!!!!!!!|!!!!!!!
+test/block moves?to?put?everything?in?place?now?it?s?largely?
+test/trade3 surplus*in*january*statistics*canada*said*t-he*jan
+            !|!!!!!!!!!!!!!!!!!|!!!!!!!!!!!!!!!!!|!!!!| !!!!||
+test/block out?of?their?hands?said?kleinwort?benson?ltd?finan
+test/trade3 uary*surplus*originally*was*reported*at*mln*dlrs*t
+             !!!!!!!!|!|!!!|!!| !!!!!!|  !!!!!!!!!!!|!!!!!!|!!
+test/block -cial?analyst?simon-?smiths--on?among?sumitomo?s?p
+test/trade3 he*february*surplus*last*year*was*m-ln*dlrs*februa
+            !!!!|!!!||!!!!!!!!!!|| !!!!!!!!!|!| !!!!!!!!!|!!|!
+test/block roblems?are?limits?pla-ced?on?its?move?to?enter?u?
+test/trade3 ry*exports*s-easonally*adjusted*were*billion*dlrs*
+            !!!|!!!!|!!| !!|!| !!!!!!!!!!!!!!!!!!!!!!|!!!!!|!!
+test/block s?securities?busin-ess?by?taking?a?share?in?americ
+test/trade3 again--st*billion*in*january*and*billion*in*februa
+            |!!||  ||!!!!!!!| !!!!!!!|!!!| !!!!!!!!!!!!!!!!!!!
+test/block an?investment?ban-k?goldman?sa-chs?and?co?sumitomo
+test/trade3 ry*february*imports*were*billion*dlrs--*against*bi
+            !!!!!!!| !!!!!!!| !!!!!!!!!!!!!|!||||  !!!|!!!|!!|
+test/block ?last?au-gust?agr-eed?to?pay?mln?dlrs?for?a?pct?li
+test/trade3 llion*in*jan-uary*a
+             !|!!!!!!!!| !!!!!!
+test/block -mited?partnership?
+
+> Best result and coordinate for files test/earn1 and test/block
+S	N	M
+-----------------
+-268	0	200
+
+> Best alignment for files test/earn1 and test/block
+test/earn1 asked*to*approve-*th--e*issue*and*an*i-ncrease*in*
+           !!!|!!||!!!!!!|| !||  !!|!!!!!!!!!!!!| !!!!|!!!!!!
+test/block moves?to?put?everything?in?place?now?it?s?largely?
+test/earn1 autho-rise-d*capital*to*mln*shar-es*from*mln*at*a*
+           !||!| !!!| !!!|!!!!!!!!!!|!!!!!| !!!!!|!!!!!!!!!|!
+test/block out?of?their?hands?said?kleinwort?benson?ltd?finan
+test/earn1 general*meeting*on*may*it*s-aid*in*a*statement*the
+           !!!!!|!!!!!|!!!!||  !!!||!| !!!!!|!!!!!!|!|!!!!!!!
+test/block cial?analyst?simon--?smithson?among?sumitomo?s?pro
+test/earn1 *new*shares*will*rank*for*dividends*declared*after
+           !!| !|!||| !!|!!!!!!!!!!!!!!!| !!!!!!|!!!!|   !|||
+test/block ble-ms?are-?limits?placed?on?i-ts?move?to?e---nter
+test/earn1 *october*amati-l*in*which*b*a*t*in--dustries*plc*b
+           !!!!!!| !!!!|| !!!!!!!!!!!|!!!!!||  !!|!!!|!!!!!!!
+test/block ?u?s?se-curities?business?by?taking?a?share?in?ame
+test/earn1 ti*l*holds*a*pct*stake*said*it*does-*n-ot*expect*t
+           !|!!!!!!!!!!!!!|!!!!|!!!!!!!!!!!!!| !| !!!!!!!!|!!
+test/block rican?investment?bank?goldman?sachs?and?co?sumitom
+test/earn1 o*maintain*its*latest*annual*dividend*rate*of*cent
+           |!!|!!!|!!!!| !!!!|!!!!!!!|   !!!!!!|!| !!!|!!!!!!
+test/block o?last?august-?agreed?to?pa---y?mln?dlr-s?for?a?pc
+test/earn1 s*a*share*on*the-*enla
+           !!!!!!!!!!!!!|!| !!!!!
+test/block t?limited?partnership?
+
+> Best result and coordinate for files test/earn3 and test/block
+S	N	M
+-----------------
+-264	0	239
+
+> Best alignment for files test/earn3 and test/block
+test/earn3 hares*later*eased*back*to*p*bowater*reported*a*mln
+           !!!||  !|!!!!!!|!!!!!!!!!!!!!!!|!|   !!| !!!!!!!| 
+test/block moves--?to?put?everything?in?place---?no-w?it?s?l-
+test/earn3 *stg*profit*in*the*compan-y*said*in*a*statement*ac
+            !!|!!!!!!|!!!!||| !!!!|| !!||||!!!!!!!!!|!!||  !!
+test/block -argely?out?of?the-ir?hands?said?kleinwort?ben--so
+test/earn3 companying*the*results*that*the*underlying*trend*s
+           !!!!!!!||!!!!!!!!!!|!| |!!!!!!!!!!!!!!!!!!!!!!!!!!
+test/block n?ltd?financial?analys-t?simon?smithson?among?sumi
+test/earn3 howed*impro-vem-ent*and*it*intended*to*expand*furt
+           !| !!!!!||| !|| !!!!!!!!|| !!!!!!|| !|!!!!!!!!!!!|
+test/block to-mo?s?problems?are?limit-s?placed-?on?its?move?t
+test/earn3 her*by*developing*existing*business--es*a--n--d*s-
+              !!!!!|!!!!!!!!!!!| ||!!!||||||||  !!!|  |  !!| 
+test/block ---o?enter?u?s?securi-ties?business?by?taking?a?sh
+test/earn3 -eeking*new*opportunities*it*added*that*it*h--a-d-
+            !|!||!!!|!!!!!!!!!!!|!|!!!!!!!!!!!!!|!!!!!|  | | 
+test/block are?in?american?investment?bank?goldman?sachs?and?
+test/earn3 -*appointed*da-vid*lyon*currently*managing*directo
+            !!!!!|!!!!!!| !!!!!!!!!!!|!|!!!!!!|!!!!| !|!|!!!|
+test/block co?sumitomo?last?august?agreed?to?pay?mln-?dlrs?fo
+test/earn3 r*of*redl---and*plc*rdld*l*a
+           |!!!!!!!|   !!|!|!!!!!!!!!!!
+test/block r?a?pct?limited?partnership?
+
+> Best result and coordinate for files test/earn5 and test/block
+S	N	M
+-----------------
+-271	0	31
+
+> Best alignment for files test/earn5 and test/block
+test/earn5 s*unfavo--urable-*a*sharp*fal-l*in*the*dollar--*pr
+           !!!!!!!|  |!!!!| !!!!!!!!!!!| !!!|!!!!!!!!|||  !!!
+test/block moves?to?put?everything?in?place?now?it?s?largely?
+test/earn5 ice*of--*zinc*and*the*depreciation*of*the*u*s*curr
+           !!!!||  !!|!!!|||!!!!!|!!!| | !!|!!!!!!!!!!!!!!!!!
+test/block out?of?their?hands?said?kle-i-nwort?benson?ltd?fin
+test/earn5 ency*created*unfavourable*econ-omic*conditions*for
+           !|| !!!!|!!!!!!!!!!!!!!!!!!!|| !|!!!!!!!|| |   !|!
+test/block anc-ial?analyst?simon?smithson?among?sumit-o---mo?
+test/earn5 *vieille*montagne*sa*vmnb*br*in*it*said*in*a*state
+           !!!!!!|| | !!| !|  !!!|!!!!!!!!!!!!!!|  !!!!!!!!|!
+test/block s?proble-m-s?a-re--?limits?placed?on?i--ts?move?to
+test/earn5 ment*that*the*two*factors*led*to*a*squeeze*on*refi
+           !|||!!!!!!!!|!!!!!!!!!!!|!!|!!!!!!!!!!!!!!!!!!||!|
+test/block ?enter?u?s?securities?business?by?taking?a?share?i
+test/earn5 n--ing*margin-s*and*an*pct*fall*in*sales*and--*ser
+           |  !!!!!|!!|| !!!!!!!!!!!!!!!|!!!|!||!!|!|||  !!!!
+test/block n?american?investment?bank?goldman?sachs?and?co?su
+test/earn5 vices*income*despite*an*unchanged*level-*of*activi
+           !|!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!|!!!| !!|!!!!!!!
+test/block mitomo?last?august?agreed?to?pay?mln?dlrs?for?a?pc
+test/earn5 ty*vieille*montagne*whi--
+           | !!|!| !| !!!!!!||!!||  
+test/block t-?limi-te-d?partnership?
+
+> Best result and coordinate for files test/gold1 and test/block
+S	N	M
+-----------------
+-273	0	42
+
+> Best alignment for files test/gold1 and test/block
+test/gold1 stralia*west-ern*mining*corp*holdings*ltd*wmng*s*w
+           !!!!!!!!!!!| |!!!!!!|||!!!!| !!!!!|!!!!| !!!!!!!!!
+test/block moves?to?put?everything?in?p-lace?now?it-?s?largel
+test/gold1 mc*said*it*will*establish*a*new*joint*venture*gold
+           !!!!!!!!!|!!| !!!!!!!!!!!!!!!|!!!| !|!!||  !!!!!!|
+test/block y?out?of?thei-r?hands?said?kleinwo-rt?ben--son?ltd
+test/gold1 *min-e*in*the*northern*territory*at*a*cost*of*abou
+           !!|| !!|!!!!!!!!!|!!!!!!!!!||!!!!!!!!!!!| !!!!!!|!
+test/block ?financial?analyst?simon?smithson?among?s-umitomo?
+test/gold1 t*mln*dlrs*the--*mine*to*be*known*as-*the*go--odal
+           !!!!!!!!!|!!!|  !||!!!!!!!| !!|!!!!| !!!|!!|  !!!!
+test/block s?problems?are?limits?place-d?on?its?move?to?enter
+test/gold1 l*projec-t*will*be*owned*pct*by*wmc*and*pct*by*a-*
+           !!!!!!|| !!!|!!!| !!!||!!!!!!!!!!!!!|!!!!!!!!!!| !
+test/block ?u?s?securities?b-usiness?by?taking?a?share?in?ame
+test/gold1 loca--l*w*r*grace*and*co*gra*unit*it*is*located*km
+           !!||  !!!!!!!!!!!!||!!!|!!!|!!!!!!!!!!!!!|!!!!!!!|
+test/block rican?investment?bank?goldman?sachs?and?co?sumitom
+test/gold1 s*east*of*the*adelaide*river*at*mt*bundey*wmc*said
+           !!!|||!!!!!!!!|!!!!!!!!!!!!!!!!!!!!!!!!!!!!!|!!!| 
+test/block o?last?august?agreed?to?pay?mln?dlrs?for?a?pct?li-
+test/gold1 *in*a*statement*it*
+           !| !!!!!|!!!|!!!|!!
+test/block mi-ted?partnership?
+
+> Best result and coordinate for files test/jobs1 and test/block
+S	N	M
+-----------------
+-255	0	21
+
+> Best alignment for files test/jobs1 and test/block
+test/jobs1 loyment*seen*stagnating*the*number*o-f*workers*emp
+           !|!!!!|!!!!!!!!!!!!!||| !!!!!!!!|!!| !!!!!!!!!!|!!
+test/block moves?to?put?everything-?in?place?now?it?s?largely
+test/jobs1 loyed*in*the*west*german*industrial*sector*stagnat
+           !| !!!!!!|||!!!!!!!!!!|!!!!!!!!!!!!!!|!!|!!!|!!!!!
+test/block ?o-ut?of?their?hands?said?kleinwort?benson?ltd?fin
+test/jobs1 ed*in*the*last*quarter*of*as*a*increase*i-n*o--ver
+           !!!|!!!!!!|!|| !!!!!!!!!!!!|!!!!!!!!!|!!| !!|  !!|
+test/block ancial?analyst-?simon?smithson?among?sumitomo?s?pr
+test/jobs1 all*em-ployment*benefited*only*the*services*branch
+           !!| || !!!!!!!!!!!!!!!!||!||!!!!!!!!|!!!!|!!!|!!!!
+test/block obl-ems?are?limits?placed?on?its?move?to?enter?u?s
+test/jobs1 *the*diw*economi-c*instit-ute*said*a*diw*report*ad
+           !!!!!!|!!|!!!!!| !!!!!!!| !!!!!|!!!|!!!!!!!!!|!!| 
+test/block ?securities?business?by?taking?a?share?in?america-
+test/jobs1 ded*the*gen-eral*downturn*in*the*economy*si-nce*la
+           !!!!!!!!!|| !!|!!!!!!!!!|!!!!!!!!!!!!|!!!!| !!!!||
+test/block n?investment?bank?goldman?sachs?and?co?sumitomo?la
+test/jobs1 st*autumn*had*had*a*negative*effect*on*the*willing
+           ||!||!| !!!|!!!!| !!!!!|!!!!!!!!!!!!| !!!!!!!!||!!
+test/block st?augu-st?agreed-?to?pay?mln?dlrs?fo-r?a?pct?limi
+test/jobs1 ness*of*firms*to*
+           !|!!!!!!!!| |!!!!
+test/block ted?partner-ship?
+
+> Best result and coordinate for files test/jobs3 and test/block
+S	N	M
+-----------------
+-279	0	47
+
+> Best alignment for files test/jobs3 and test/block
+test/jobs3 a*s*seasonally*adjusted*unemployment*rat-e*rose*to
+           !!!!| !!|!!!!!!!!!!!!!!!!!!!||!!!!|!!!!| !!!!!!!!!
+test/block moves-?to?put?everything?in?place?now?it?s?largely
+test/jobs3 *pct*of*the*estimated*workforce*in*march*from*pct*
+           !!!|!||!||  |!!!!| !|!!!!!!!!!| || !!|!!!!!!!!!!|!
+test/block ?out?of?th--eir?ha-nds?said?kle-in-wort?benson?ltd
+test/jobs3 in*february*and*pct--*a*year*earlier*the*statistic
+           !!!!!!!!| !!||!!!!|  !!!!!!!!!!!!!!!!!!!!|!!!!!!!!
+test/block ?financia-l?analyst?simon?smithson?among?sumitomo?
+test/jobs3 s*bureau*said*the*number*of*jobless*rose*to---*fro
+           |!!!!!!!!|!!!!!!!!!!!!!!!!!!!|!!!!|!!|!|!||   !!|!
+test/block s?problems?are?limits?placed?on?its?move?to?enter?
+test/jobs3 m*in*february*and*a*year*earlier*the*bureau*said*u
+           !!!!!!!!|!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!||!!!!|!!!!
+test/block u?s?securities?business?by?taking?a?share?in?ameri
+test/jobs3 nadjusted*the*number*of*unemployed*rose*to*from*in
+           !|!!!!!| !|!| |!!| !!!!!!!!|!!!!!!!!!!!!!!!!!!|!!!
+test/block can?inve-stme-nt?b-ank?goldman?sachs?and?co?sumito
+test/jobs3 *february*bu-t-*the*rate*eased*to*pct*f-r-om*refl-
+           !!!!!!!!!!!| | !!!|!!!|!!!|!!!!!!!!!!!| | !!!!!!| 
+test/block mo?last?august?agreed?to?pay?mln?dlrs?for?a?pct?li
+test/jobs3 ecting*a*slight*inc
+           !!|!!!!| !!!!!!!|!!
+test/block mited?pa-rtnership?
+
+> Best result and coordinate for files test/ship1 and test/block
+S	N	M
+-----------------
+-265	0	695
+
+> Best alignment for files test/ship1 and test/block
+test/ship1 anges*to--*the*state*s*workers*compensation*la-ws*
+           !!!||!||  !|!|!!!!| !!!!!!!!!!!|!!!!!!!| !!!|| !!!
+test/block moves?to?put?everyt-hing?in?place?now?it-?s?largel
+test/ship1 the*shipping*sources*said*the-*various*port*unions
+           !!!!!!!!!!!!!!!!!!!|!||||!!!| !!!|!!!!!!| !!!!!!!!
+test/block y?out?of?their?hands?said?kleinwort?benso-n?ltd?fi
+test/ship1 *appear*to*be*taking*it*in*turn*to*work*for*a*shor
+           !|!!!|!!!!!!!!|!!|!!!!!!|!!!!!!!!|!!!!!!!!!!!!|!!|
+test/block nancial?analyst?simon?smithson?among?sumitomo?s?pr
+test/ship1 t*time*at*the*start*of*each*shift*and*t-hen*to*wal
+           !!!!|!!|!!!!!!!| !!!!!!|!!!!!!!!!!!!!!| !|| |  !!!
+test/block oblems?are?limit-s?placed?on?its?move?to?en-t--er?
+test/ship1 k*off*car-go*handlin--g*in*the*ports*has*been*disr
+           !!!!!!|!| !!!!!!!!||  !!!!!|!!!!!!!!!|| !!!!|!!!!|
+test/block u?s?securities?business?by?taking?a?sha-re?in?amer
+test/ship1 upted*with*container*movements*most*affected*but--
+           !!!!!!!!!!!!!||!!!!!!!|!!|!|!|!!!| !|!!!|!!!!!!|  
+test/block ican?investment?bank?goldman?sachs-?and?co?sumitom
+test/ship1 -*has-*not*stopped*altogether*they*s-aid*they*said
+            !!|| !!!!!||!!!!!!!!||!!!!!!!!!!!!| !!!!!!!!!!!|!
+test/block o?last?august?agreed?to?pay?mln?dlrs?for?a?pct?lim
+test/ship1 *they*could*not*say*h
+           !| |  !!!!!!| !!|!!!!
+test/block it-e--d?partn-ership?
+
+> Best result and coordinate for files test/trade2 and test/block
+S	N	M
+-----------------
+-272	0	0
+
+> Best alignment for files test/trade2 and test/block
+test/trade2 soviet*trade*deficit*with*west*soars*in*the*soviet
+            !|| |!!|!!!!!!|!!!!| !|!!!!!!!!!!!!!!!!!|!!!!!!!|!
+test/block mov-es?to?put?everyt-hing?in?place?now?it?s?largel
+test/trade2 *trade*deficit*with*the*west*almost*quadrupled*las
+            !!!!!!!!!!!!|!!!!!!!!!!!!!!!!!!!|!|!!!!!!!!|!|!!!!
+test/block y?out?of?their?hands?said?kleinwort?benson?ltd?fin
+test/trade2 t*year*reaching*billion*roubles*compared*with*mln*
+            !!!!|!!!!| !!!!!!|  !||!!!!!!!!!!!|!!!!!!!|| !|!!!
+test/block ancial?ana-lyst?si--mon?smithson?among?sumit-omo?s
+test/trade2 in*o-fficial*figures*showed*statistics*published*b
+            !!!| !!!!!|!!!!!!!!|!!!!!||!!!!!!|!!!!!!!!!!!!|!!!
+test/block ?problems?are?limits?placed?on?its?move?to?enter?u
+test/trade2 y*the*monthly*journal*foreign*trade*showe---d*sovi
+            !!!!|!!!!| !!!!!|!!!!!!!!!!!!!!!!!!!||!!|   !!!!!|
+test/block ?s?securit-ies?business?by?taking?a?share?in?ameri
+test/trade2 et*trade*turnover*for*fell*to*billion*roubles*fro-
+            !!!!!!!|!|!!|!!!!!!!!!!!!!!!!!!!!!!!!!!|!!!!!!!!| 
+test/block can?investment?bank?goldman?sachs?and?co?sumitomo?
+test/trade2 m*billion*the*pre-vious*year*a*drop*o--f*pct*mosco
+            !!!!!!!!!!|!!!!!| !!|!!!|!!!!!!!|!!!|  !!|||!!!!!!
+test/block last?august?agreed?to?pay?mln?dlrs?for?a?pct?limit
+test/trade2 w*s*trade*surplu
+            !!!!!|!!|!|!!| !
+test/block ed?partnership-?
+
+> Total time taken: 0m3.081s
+
