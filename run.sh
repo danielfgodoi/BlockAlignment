@@ -1,5 +1,4 @@
-( time bin/BlockAlignment -b test/block -t test/text test/text-2 test/text-b test/news test/news-2 ) > results/block 2>&1
-( time bin/BlockAlignment -b test/block-b -t test/text-b test/news test/news-2 ) > results/block-b 2>&1
-( time bin/BlockAlignment -b test/part -t test/news test/news-2 ) > results/part 2>&1
-( time bin/BlockAlignment -b test/part-m -t test/news test/news-2 ) > results/part-m 2>&1
-( time bin/BlockAlignment -b test/part-b -t test/news test/news-2 ) > results/part-b 2>&1
+( time bin/BlockAlignment -b test/earn/earn-block -t test/earn/earn-1 test/earn/earn-2 test/earn/earn-3 test/earn/earn-4 test/earn/earn-5 test/earn/earn-6 test/earn/earn-7 test/earn/earn-8 test/earn/earn-9 test/earn/earn-10 ) > results/earn-block 2>&1
+( time bin/BlockAlignment -b test/earn/earn-block-n -t test/earn/earn-1 test/earn/earn-2 test/earn/earn-3 test/earn/earn-4 test/earn/earn-5 test/earn/earn-6 test/earn/earn-7 test/earn/earn-8 test/earn/earn-9 test/earn/earn-10 ) > results/earn-block-n 2>&1
+( time bin/BlockAlignment -b test/trade/trade-block -t test/trade/trade-1 test/trade/trade-2 test/trade/trade-3 test/trade/trade-4 test/trade/trade-5 test/trade/trade-6 test/trade/trade-7 test/trade/trade-8 test/trade/trade-9 test/trade/trade-10 ) > results/trade-block 2>&1
+( time bin/BlockAlignment -b test/trade/trade-block-n -t test/trade/trade-1 test/trade/trade-2 test/trade/trade-3 test/trade/trade-4 test/trade/trade-5 test/trade/trade-6 test/trade/trade-7 test/trade/trade-8 test/trade/trade-9 test/trade/trade-10 ) > results/trade-block-n 2>&1

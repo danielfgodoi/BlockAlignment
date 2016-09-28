@@ -34,16 +34,17 @@ BlockAlignment::readFile(string fileName,  vector<vector<char> > &fileData, int 
 			++i;
 		}
 
-		for (int i = 0; i < fileData.size(); ++i)
-		{
-			for (int j = 0; j < fileData[0].size(); ++j)
-			{
-				if (fileData[i][j] == ' ')
-				{
-					fileData[i][j] = c;
-				}
-			}
-		}
+		// // Preprossing text chaging whitespaces with '?' for blocks and '*' for texts
+		// for (int i = 0; i < fileData.size(); ++i)
+		// {
+		// 	for (int j = 0; j < fileData[0].size(); ++j)
+		// 	{
+		// 		if (fileData[i][j] == ' ')
+		// 		{
+		// 			fileData[i][j] = c;
+		// 		}
+		// 	}
+		// }
 
 		// // Print fileData
 		// for (int i = 0; i < fileData.size(); ++i)
