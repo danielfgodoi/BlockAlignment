@@ -9,6 +9,8 @@
 #include <climits>
 #include <ctime>
 
+#include <iomanip>
+
 using namespace std;
 
 class BlockAlignment

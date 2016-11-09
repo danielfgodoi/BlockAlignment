@@ -1,10 +1,11 @@
-
+c
 > Best result and coordinate for files test/earn/earn-1 and test/earn/earn-block
 S	N	M
 -----------------
 -241	0	244
 
-Hits: x
+Hits for ? chars: 3 of 70
+Hits percentage: 4.29%
 
 > Best alignment for files test/earn/earn-1 and test/earn/earn-block
 test/earn/earn-1      later -eased -back t--o p bowater reported--- ---
@@ -37,7 +38,8 @@ S	N	M
 -----------------
 -241	0	796
 
-Hits: x
+Hits for ? chars: 8 of 70
+Hits percentage: 11.4%
 
 > Best alignment for files test/earn/earn-2 and test/earn/earn-block
 test/earn/earn-2     rofit this year citibank lost crowns in --norway i
@@ -70,7 +72,8 @@ S	N	M
 -----------------
 -238	0	523
 
-Hits: x
+Hits for ? chars: 6 of 70
+Hits percentage: 8.57%
 
 > Best alignment for files test/earn/earn-3 and test/earn/earn-block
 test/earn/earn-3     ioner ray astin that t--he listings of new -b shar
@@ -103,7 +106,8 @@ S	N	M
 -----------------
 -243	0	67
 
-Hits: x
+Hits for ? chars: 8 of 70
+Hits percentage: 11.4%
 
 > Best alignment for files test/earn/earn-4 and test/earn/earn-block
 test/earn/earn-4     nc said it expects to report a loss of dlrs to dlr
@@ -136,7 +140,8 @@ S	N	M
 -----------------
 -227	0	312
 
-Hits: x
+Hits for ? chars: 7 of 70
+Hits percentage: 10%
 
 > Best alignment for files test/earn/earn-5 and test/earn/earn-block
 test/earn/earn-5     iod ending march above analysts estimates of mln d
@@ -169,7 +174,8 @@ S	N	M
 -----------------
 -238	0	567
 
-Hits: x
+Hits for ? chars: 4 of 70
+Hits percentage: 5.71%
 
 > Best alignment for files test/earn/earn-6 and test/earn/earn-block
 test/earn/earn-6     hat would result in reaching-- the- day limit in t
@@ -202,7 +208,8 @@ S	N	M
 -----------------
 -224	0	251
 
-Hits: x
+Hits for ? chars: 7 of 70
+Hits percentage: 10%
 
 > Best alignment for files test/earn/earn-7 and test/earn/earn-block
 test/earn/earn-7     s year burnell roberts chairman and chief executiv
@@ -235,7 +242,8 @@ S	N	M
 -----------------
 -244	0	212
 
-Hits: x
+Hits for ? chars: 6 of 70
+Hits percentage: 8.57%
 
 > Best alignment for files test/earn/earn-8 and test/earn/earn-block
 test/earn/earn-8     losses because o-f a suspected foreign currency -f
@@ -268,7 +276,8 @@ S	N	M
 -----------------
 -239	0	279
 
-Hits: x
+Hits for ? chars: 6 of 70
+Hits percentage: 8.57%
 
 > Best alignment for files test/earn/earn-9 and test/earn/earn-block
 test/earn/earn-9     s lloyds bank canada the- bank said the initial d-
@@ -301,7 +310,8 @@ S	N	M
 -----------------
 228	0	598
 
-Hits: x
+Hits for ? chars: 70 of 70
+Hits percentage: 100%
 
 > Best alignment for files test/earn/earn-10 and test/earn/earn-block
 test/earn/earn-10    morgan posted other trading losses of mln dlrs bec
@@ -329,9 +339,9 @@ test/earn/earn-10    arket on the positive-
                      ||||||||!||||| !!|||| 
 test/earn/earn-block arket on?the p-??tive?
 
-> Total time taken: 0m3.463s
+> Total time taken: 0m3.233s
 
 
-real	0m3.465s
-user	0m3.460s
-sys	0m0.004s
+real	0m3.236s
+user	0m3.232s
+sys	0m0.000s

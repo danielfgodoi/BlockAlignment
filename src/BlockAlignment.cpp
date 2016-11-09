@@ -334,6 +334,38 @@ BlockAlignment::print()
 	cout << "S\tN\tM\n-----------------\n";
 	cout << similarity[iMax][0] << "\t" << similarity[iMax][1] << "\t" << similarity[iMax][2] << endl << endl;
 
+	// Hits for ? chars
+	int hits = 0;
+	int j = 0;
+	
+	// Earn
+	// char chars[] = "rost loss of setderricuriondi so of t notesilpoo wneton raostri ro si-";
+	
+	// Trade
+	char chars[] = "aprn erly ly un int t haablxibanctt jes ra ily ";
+
+	int sequenceSize = bestResult[0].size();
+
+	for (int i = 0; i < sequenceSize; ++i)
+	{
+		if (bestResult[1][i] == '?')
+		{
+			if (bestResult[0][i] == chars[j])
+			{
+				++hits;
+			}
+
+			++j;
+		}
+	}
+
+	double percent = ((double)hits / 47) * 100;
+
+	cout << "Hits for ? chars: " << hits << " of 47" << endl;
+	cout << "Hits percentage: ";
+	cout << setprecision(3) << percent;
+	cout << "%" << endl << endl;
+
 	// cout << "> Text (best window)\n";
 	// for (int i = similarity[iMax][1]; i < similarity[iMax][1] + blockSizeN; ++i)
 	// {
@@ -360,20 +392,19 @@ BlockAlignment::print()
 
 
 	cout << "> Best alignment for files " << textFileName << " and " << blockFileName << endl;
-	int sequenceSize = bestResult[0].size();
 	
 	#ifndef breakLine
 	#define breakLine
 	int breakLine = 150;
 	#endif
 	
-	for (int i = 0; i < sequenceSize; ++i)
-	{
+	// for (int i = 0; i < sequenceSize; ++i)
+	// {
 		// Text sequence best result
 		// cout << bestResult[0][i];
 		// Block sequence best result
 		// cout << bestResult[1][i];
-	}
+	// }
 
 	for (int i = 0; i < sequenceSize; i += breakLine)
 	{
